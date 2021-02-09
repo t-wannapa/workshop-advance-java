@@ -1,4 +1,3 @@
 .idea/
-workshop01/.idea
-workshop01/target
-workshop01/workshop01.iml
+*target/
+*.iml
