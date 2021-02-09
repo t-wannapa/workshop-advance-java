@@ -4,12 +4,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Basket {
-    List<Book> books = new ArrayList<Book>();
+
+    private List<Book> books = new ArrayList<Book>();
     private int netPrice;
     private int discountPrice;
 
     public void addBook(Book book) {
         books.add(book);
+    }
+    
+    public List<Book> getBooks() {
+        return books;
     }
 
     public int getNetPrice() {
