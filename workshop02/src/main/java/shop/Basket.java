@@ -27,6 +27,10 @@ public class Basket {
     public List<Book> getBooks() {
         return books;
     }
+
+    public Map<String, Integer> getBooksQty() {
+        return bookQty;
+    }
     
     public int getBooksQty(int index) {
         String name = books.get(index).getName();
