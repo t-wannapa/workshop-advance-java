@@ -4,6 +4,12 @@ public class Book {
     private String name;
     private int price;
 
+    public int getQty() {
+        return qty;
+    }
+
+    private int qty;
+
     public Book() {
     }
 

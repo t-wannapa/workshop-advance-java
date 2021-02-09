@@ -6,9 +6,9 @@ import java.util.stream.Collectors;
 
 public class DiscountCalculator {
     public static int get(Basket basket, int netPrice) {
-        List<Book> books = basket.getBooks();
+       List<Book> books = basket.getBooks();
 
-        Map<String, List<Book>> seriesBook = books.stream().collect(Collectors.groupingBy(Book::getName));
-        return netPrice - (netPrice*Promotion.getDiscount(seriesBook.size())/100);
+       Map<String, List<Book>> seriesBook = books.stream().collect(Collectors.groupingBy(Book::getName));
+       return netPrice - (netPrice*Promotion.getDiscount(seriesBook.size())/100);
     }
 }
