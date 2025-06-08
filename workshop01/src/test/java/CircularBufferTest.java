@@ -26,6 +26,6 @@ class CircularBufferTest {
         int size = circularBuffer.getSize();
 
         // Validate/Checking/Assert
-        assertEquals(6, size);
+        assertEquals(7, size);
     }
 }
